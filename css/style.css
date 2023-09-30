@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 10px;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea{font-family: inherit;}
+
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body{
+    background-image: url("https://get.wallhere.com/photo/digital-art-nature-fantasy-art-trees-mountains-sky-1545293.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    
+}
+
+.cryptographer{
+    border: 2px solid #6387a8;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 45px 60px #6387a8;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.encryption{
+    display: flex;
+    flex-direction: column;
+    color: #293951;
+    align-items: center;
+
+}
+
+.decoding{
+    display: flex;
+    flex-direction: column;
+    color: #293951;
+    align-items: center;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 1000;
+    padding: 10px;
+    margin: 30px;
+}
+
+textarea{
+    border: 0.5px solid #e5eaec;
+    box-shadow: 0px 0px 10px 2px #6387a8;
+    border-radius: 10px;
+    text-indent: 5px;
+    background: none;
+    margin: 20px;
+    min-width: 300px;
+    color: #e5eaec;
+}
+
+.textarea-decoder{
+    color: #293951;
+}
+
+a{
+    border: 1px solid #e5eaec;
+    padding: 20px;
+    border-radius: 20px;
+    color: #65a3de;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.decoding-btn{
+    /* color: #e5eaec; */
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.encryption-btn:hover{
+    color: #293951;
+    transition: 1s;
+}
+
+.decoding-btn:hover{
+    color: #e5eaec;
+    transition: 1s;
+}
+
+@media (width < 1024px){
+    body{
+    background-size: 400% auto;
+    }
+}
