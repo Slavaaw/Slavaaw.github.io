@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card__body">
+            <div class="card__encryption">
+                <div class="card__title"><h3>Зашифровать текст</h3></div>
+                <div class="card__input">
+                    <textarea id="textarea-encryption" name="input-text" cols="30" rows="5"></textarea>
+                </div>
+                <div class="card__footer">
+                    <div class="card__translated-text">
+                        <div class="card__output"><p id="result-encryption">Здесь появится перевод</p></div>
+                        <div class="card__copy-img">
+                            <img src="copy.png" alt="Copy" id="copy-btn1" onclick="copy1()">
+                        </div>
+                    </div>
+                    <div class="card__btn"><a  href="#" onclick="encryption()">Зашифровать</a></div>
+                </div>
+            </div>
+            <div class="card__decoding">
+                <div class="card__title"><h3>Расшифровать текст</h3></div>
+                <div class="card__input">
+                    <textarea id="textarea-decoder" name="input-text" cols="30" rows="5"></textarea>
+                </div>
+                <div class="card__footer">
+                    <div class="card__translated-text">
+                        <div class="card__output"><p id="result-decoding">Здесь появится перевод</p></div>
+                        <div class="card__copy-img">
+                            <img id="copy-btn2" onclick="copy2()" src="copy.png" alt="Copy">
+                        </div>
+                    </div>
+                    <div class="card__btn"><a href="#" onclick="decoding()">Расшифровать</a></div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
