@@ -181,7 +181,7 @@ body {
   }
 }
 @media (max-width: 768px) {
-  body{background-size: 400%;}
+  body{background-size: 250%;}
   .card {
     max-width: 610px;
   }
@@ -197,6 +197,7 @@ body {
   }
 }
 @media (max-width: 610px) {
+  body{background-size: 480%;}
   .card {
     -ms-grid-column: 1;
     -ms-grid-column-span: 16;
