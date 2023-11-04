@@ -181,6 +181,7 @@ body {
   }
 }
 @media (max-width: 768px) {
+  body{background-size: 400%;}
   .card {
     max-width: 610px;
   }
