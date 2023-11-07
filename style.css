@@ -156,11 +156,10 @@ body {
 }
 .card a {
   color: #F2BDCF;
-  font-size: 25px;
+  font-size: 20px;
   border: 5px solid #6F5AAE;
   border-radius: 20px;
-  padding: 9px;
-  margin: 5px;
+  padding: 5px;
 }
 .card a:hover {
   background-color: #6F5AAE;
