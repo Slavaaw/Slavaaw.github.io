@@ -123,6 +123,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 240px;
+  overflow: auto;
 }
 .card__translated-text p {
   padding: 10px;
