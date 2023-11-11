@@ -178,6 +178,7 @@ body {
   background-color: #F2BDCF;
   border-radius: 20px;
   margin-right: 50px;
+  width: 90%;
 }
 
 ::-webkit-scrollbar-thumb{
