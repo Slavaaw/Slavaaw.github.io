@@ -111,6 +111,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 .card__translated-text {
   display: -webkit-box;
@@ -119,25 +120,28 @@ body {
   -webkit-box-shadow: 0px 0px 5px 5px #6F5AAE;
           box-shadow: 0px 0px 5px 5px #6F5AAE;
   border-radius: 20px;
-  margin-top: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 240px;
-  overflow: auto;
+  
+
 }
 .card__translated-text p {
   padding: 10px;
   color: #F2BDCF;
+  max-width: 240px;
+  max-height: 60px;
+  overflow: auto;
 }
 .card textarea {
   background: none;
-  min-width: 100%;
+  min-width: 99%;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px 5px #6f5aae;
           box-shadow: 0px 0px 5px 5px #6f5aae;
   color: #F2BDCF;
   resize: none;
+  margin-bottom: 10px;
 }
 .card textarea:focus {
   -webkit-box-shadow: none;
@@ -159,17 +163,32 @@ body {
 .card a {
   color: #F2BDCF;
   font-size: 20px;
-  border: 5px solid #6F5AAE;
+  -webkit-box-shadow: 0px 0px 5px 5px #6F5AAE;
+  box-shadow: 0px 0px 5px 5px #6F5AAE;
   border-radius: 20px;
-  padding: 5px;
+  padding: 13px 10px;
+  margin-left: 15px;
 }
 .card a:hover {
   background-color: #6F5AAE;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+::-webkit-scrollbar{
+  background-color: #F2BDCF;
+  border-radius: 20px;
+  margin-right: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #003A84;
+  border-radius: 20px;
+}
+
 @media (max-width: 1200px) {
+  body{background-size: 200%;}
   .card {
+    grid-column: 5/13;
     max-width: 970px;
   }
 }
